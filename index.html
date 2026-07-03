@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayangkuuu</title>
+   
+   <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+    <!-- Elemen Audio Tersembunyi -->
+    <audio id="my-voicenote" src="vnfromgaly.mp3"></audio>
+
+    <div class="container">
+        <div id="section-pin" class="section active">
+            <h1 style="color: var(--primary);">Halo! Ada pesan untuk sayanggg ❤️</h1>
+            <p style="margin-top: 10px;">Masukkan PIN</p>
+            <div class="pin-inputs" id="pin-box">
+                <input type="password" maxlength="1" class="pin-input">
+                <input type="password" maxlength="1" class="pin-input">
+                <input type="password" maxlength="1" class="pin-input">
+                <input type="password" maxlength="1" class="pin-input">
+                <input type="password" maxlength="1" class="pin-input">
+                <input type="password" maxlength="1" class="pin-input">
+            </div>
+            <p id="error-msg" style="color: red; margin-top: 15px; display: none;">PIN salah, coba dengan angka kelahiran sayang!</p>
+        </div>
+
+        
+        <div id="section-message" class="section">
+            <h1 style="color: var(--primary); margin-bottom: 5px;">Selamat Ulang Tahun Cintakuuu! ✨</h1>
+            
+            <!-- Audio Player Bar -->
+            <div class="audio-container" id="audio-box">
+                <button class="play-btn" id="btn-play">▶</button>
+                <span id="audio-status" style="font-size: 0.95rem; font-weight: 500;">Putar Voice Note 🎧</span>
+            </div>
+
+            <div id="typing-box"></div>
+            <button id="btn-album" class="btn">Buka Album Kenangan</button>
+        </div>
+
+        
+        <div id="section-album" class="section">
+            <h2 style="margin-bottom: 20px;">Album Kenangan Kita 📸</h2>
+            <div class="book-container" id="flipbook">
+                <!-- Pages will be generated here -->
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-top: 20px;">Ganti halaman, di klik fotonya yaa sayanggg</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
